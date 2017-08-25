@@ -9,3 +9,85 @@ h1 {
     text-align: center;
 }
 
+body {
+    /* background-size:100%; */
+    background-size: cover;
+    background-image: url("../images/Splash.jpg");
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* position: relative; */
+    /* background: url(../images/Splash.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
+
+div.background {
+    float: left;
+    position: relative;
+    background: url("../images/BrownPanel.jpg") repeat;
+    border: 2px solid black;
+    height: 100px;
+    width: 150px;
+}
+
+div.transbox p {
+    height: 0px;
+}
+  
+div.transboxSmall {
+    margin: 20px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transboxSmall p {
+    margin: 6%;
+    font-weight: bold;
+    color: #000000;
+}
+
+div.transboxMedium {
+    margin: 20px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    text-align: center;
+}
+
+.instructions {
+    float: right;
+    position: relative;
+    background: url("../images/BrownPanel.jpg") repeat;
+    border: 2px solid black;
+    height: 280px;
+    width: 600px;
+}
+
+div.transbox {
+    margin: 10px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+    margin: 4%;
+    font-weight: bold;
+    color: #000000;
+}
+
+#images {
+    /* float: left; */
+    /* position: relative; */
+    position: absolute;
+    white-space: nowrap;
+    left: 0px;
+    top: 150px;
+    height: 60px;
+}
