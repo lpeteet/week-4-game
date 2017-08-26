@@ -23,10 +23,23 @@ body {
     background-size: cover; */
 }
 
+.woodenBtn {
+    background: url("../images/WoodenStart.jpg") repeat;
+}
+
 div.background {
     float: left;
     position: relative;
     background: url("../images/BrownPanel.jpg") repeat;
+    border: 2px solid black;
+    height: 130px; /* 100 */
+    width: 150px; /* 150 */
+}
+
+div.bgGameOptions {
+    float: left;
+    position: relative;
+    background: url("../images/WoodenStart.jpg") repeat;
     border: 2px solid black;
     height: 100px;
     width: 150px;
@@ -37,25 +50,42 @@ div.transbox p {
 }
   
 div.transboxSmall {
-    margin: 20px;
+    /* From Web:
+        width: 640px;
+        height: auto;
+        margin: 0 auto;
+        padding: 10px;
+        position: relative;
+    Anonther Web Option:
+        display:inline-block;
+        vertical-align:top;
+    */
+
     background-color: #ffffff;
     border: 1px solid black;
     opacity: 0.6;
     filter: alpha(opacity=60); /* For IE8 and earlier */
+    font-weight: bold;
+    text-align: center;
+    height: auto;
+    width: 90%;
+    position: relative;
+    vertical-align: middle;
 }
 
-div.transboxSmall p {
+/* div.transboxSmall p {
     margin: 6%;
     font-weight: bold;
     color: #000000;
 }
-
+ */
 div.transboxMedium {
     margin: 20px;
     background-color: #ffffff;
     border: 1px solid black;
     opacity: 0.6;
     filter: alpha(opacity=60); /* For IE8 and earlier */
+    font-weight: bold;
     text-align: center;
 }
 
@@ -67,6 +97,21 @@ div.transboxMedium {
     height: 280px;
     width: 600px;
 }
+.gameOptions {
+    float: right;
+    position: relative;
+    background: url("../images/WoodenStart.jpg") repeat;
+    border: 2px solid black;
+    height: 280px;
+    width: 600px;
+    font-weight: bold;
+}
+/*
+    <div class="gameOptions">
+        <button id="woodenBtn" class="btn"><h1>Start</h1></button>
+    </div>
+
+*/
 
 div.transbox {
     margin: 10px;
@@ -83,11 +128,23 @@ div.transbox p {
 }
 
 #images {
-    /* float: left; */
-    /* position: relative; */
-    position: absolute;
+    float: left;
+    position: relative;
+    /* position: absolute; */
     white-space: nowrap;
-    left: 0px;
-    top: 150px;
+    left: 50px;
+    /* top: 150px; */
+    top: 0px;
     height: 60px;
 }
+
+/* TESTING!!! */
+@import "compass/css3";
+
+body{
+  padding: 50px;
+}
+
+
+
+

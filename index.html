@@ -10,36 +10,45 @@
     <!-- jQuery Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Bootstrap-->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="assets/javascript/game.js"></script>
   </head>
 
   <body>
     <!-- <p>Crystals Collector Game</p> -->
     <div class="background">
-      <div class="transboxSmall">
+      <!-- <div class="transboxSmall"> -->
+      <div class="transboxMedium">
         <p>Crystal Collector</p>
       </div>
     </div>
     <div class="background">
       <div class="transboxMedium">
         <p>Score to Match</p>
-        <p>17</p>
+        <p id="scoreToMatch">0</p>
       </div>
     </div>
     <div class="background">
       <div class="transboxMedium">
         <p>Your Total Score</p>
-        <p>17</p>
+        <p id="theirScore">0</p>
       </div>
     </div>
     <div class="background">
       <div class="transboxMedium">
-        <p>You Won!</p>
-        <p>Wins: 1</p>
-        <p>Losses: 0</p>
+        <p id="winLostMsg">You ...!</p>
+        <p id="wins">Wins: 0</p>
+        <p id="losses">Losses: 0</p>
       </div>
     </div>
+    <div class="background">
+      <div class="transboxMedium">
+        <!-- <div class="transboxSmall"> -->
+        <!-- <p id="startGame">Start Game</p> -->
+        <button id="startBtn" class="btn transboxMedium" value="1"><h4>New Game</h4></button>
+      </div>
+    </div>
+  
     <div class="instructions">
       <div class="transbox">
         <p>You will be given a random number at the start of the game.</p>
@@ -60,12 +69,17 @@
     </div>
     <br>
     <div id="images">
-        <img class="img" id="img1" src="assets/images/RedOctagon.jpg" alt="Rec Octagon" />
+        <img class="img" id="img1" src="assets/images/RedOctagon.jpg" alt="Rec Octagon"/>
         <img class="img" id="img2" src="assets/images/GreenTriangle.jpg" alt="Green Triangle" />
         <img class="img" id="img3" src="assets/images/OrangeDiamond.jpg" alt="Orange Diamond" />
         <img class="img" id="img4" src="assets/images/PurpleSquareGem.jpg" alt="Purple Square" />
     </div>
-
+    <!-- TESTING!!!-->
+    <div class="alert alert-success" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Success!</strong> You have been signed in successfully!
+      </div>
+      
   </body>
 
 </html>
