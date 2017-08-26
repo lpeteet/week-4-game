@@ -87,6 +87,73 @@ In this assignment, you'll create another fun and interactive game for web brows
 
 4. The player wins the game by defeating all enemy characters. The player loses the game the game if their character's `HP` falls to zero or below.
 
+****** MY NOTES ******
+
+Rules from watching Demo:
+    Crystals Collector Design Rules:
+    Crystal Random Numbers between 1 and 12
+    Random Number Goal between 19 and 120
+
+Screen Contents:
+
+Background:
+    Ugly Blue with Hexagons containing circles inside them
+
+Orange Text Box:
+    ----------------------
+    | CrystalsCollector! |
+    ----------------------
+    All one line
+    No Spaces
+    Left Top
+    Centered Vertically and Horizontally
+
+Pale Skin Colored (Beige?) Text Box with Green Text:
+    ===============================================================
+    | You will be given a random number at the start of the       |
+    | game.                                                       |
+    |                                                             |
+    | There are four crystals below. By clicking on a crystal you |
+    | will add a specific amount of points to your total score.   |
+    |                                                             |
+    | You win the game by matching your total score to random     |
+    | number, you lose the game if your total score goes above    |
+    | the random number.                                          |
+    |                                                             |
+    | The value of each crystal is hidden from you until you      |
+    | click on it.                                                |
+    |                                                             |
+    | Each time when the game starts, the game will change the    |
+    | values of each crystal                                      |
+    ===============================================================
+
+Green Text Box:
+    Top Left Number To Match
+
+Light Blue Text Box:
+    Float Right of Green Text Box
+    Message ["You lost!"| You Won!"]
+    blank line
+    Wins: x
+    blank line
+    Losses: y
+
+4 Crystal Pictures in a row:
+    Left
+    Small Spacing between
+    Red, Blue, Yellow, Green
+
+Blue-Green Text Box:
+    Left just below Crystals
+    Left justified Text
+    "Your total score is "
+
+Blue-Green Text Box:
+    Left just blow above Blue-Green Textbox
+    Left Justified text
+    XX Where XX is your current score
+
+ 
 ##### Option 2 Game design notes
 
 * Each character in the game has 3 attributes: `Health Points`, `Attack Power` and `Counter Attack Power`.
