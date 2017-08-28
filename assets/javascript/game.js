@@ -43,13 +43,13 @@ $(document).ready(function(){
             losses++;
             $("#winLostMsg").text("You Lost!");
             $("#losses").text("Losses: " + losses);
-            alert("Your Score Exceeds Score to Match");
+            //alert("Your Score Exceeds Score to Match");
             gameOver = true;
         } else if (theirScore == scoreToMatch) {
             wins++;
             $("#winLosMsg").text("You Won!");
             $("#wins").text("Wins: " + wins);
-            alert("Your Score Matches!");
+            //alert("Your Score Matches!");
             gameOver = true;
         }
     });
